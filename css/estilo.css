@@ -45,3 +45,29 @@ html{
     background-color: #fff;
 }
 
+ .tit-foto{
+    font-size: 4rem;
+    text-align: center;
+    margin: 5% 0;
+ }
+
+ .conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+
+ }
+
+ .conteudo >div img{
+    max-width: 100%;
+    display: block;
+ }
+
+ .conteudo > div{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+
+ }
+
