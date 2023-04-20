@@ -1,5 +1,7 @@
 @import url("./cabecalho.css");
 @import url("./conteudo.css");
+@import url("./break-point-630px.css");
+
 *{
     margin: 0;
     padding: 0;
@@ -73,3 +75,22 @@ html{
 
  }
 
+/* breakpoint 630px */
+
+
+@media(max-width:630px){
+    .cabecalho{
+        flex-direction: column;        
+    }
+
+        .cabecalho nav{
+            flex-wrap: nowrap;
+        }
+
+        .cabecalho a{
+            font-size: 2em;
+        }
+}
+
+
+/* breakpoint 630px */
