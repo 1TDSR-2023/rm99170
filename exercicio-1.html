@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio1</title>
+
+    <script src="./js/exercicio-1.js" defer ></script>
+</head>
+<body>    
+
+    <button id="botao">Mudar cor</button>
+
+    <h1></h1>
+    <form>
+      <label for="item">Novo item:</label>
+      <input type="text" id="item" name="item">
+      <button type="button" onclick="adicionar()">Enviar</button>
+    </form>
+    
+    <ul id="lista"></ul>
+
+    <script>
+        function adicionar() {
+            var item = document.getElementById("item").value;
+            var lista = document.getElementById("lista");
+            var novoItem = document.createElement("li");
+            var textoNovoItem = document.createTextNode(item);
+            novoItem.appendChild(textoNovoItem);
+            lista.appendChild(novoItem);
+            document.getElementById("item").value = "";
+      }
+    </script>
+
+
+<div id="img-vvv">
+    <img id="img" src="./img/lobo1.jpg" width="450px">
+    <div>
+    <button id="img-ttt">Trocar imagem</button>
+</div>
+
+<div>
+    <button id="btn-oc">Ocultar</button>
+</div>
+
+
+
+</body>
+</html>
+
+
