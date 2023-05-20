@@ -139,12 +139,19 @@ try{
         //ADICIONANDO O USUÁRIO VALIDADO NO LOCAL STORAGE
         localStorage.setItem("user-validado", JSON.stringify(userValidado));
 
+        //CRIANDO UM TOKEN COM O MATH.RANDON 
+        const token = Math.random().toString(16).substring(2)+Math.random().toString(16).substring(2);
+
+        localStorage.setItem("user-token", token)
+
+
+
         //Redirect
         setTimeout(()=>{
 
             window.location.href="../home.html";
 
-        }, 3000);
+        }, 1000);
 
 
     }else{
